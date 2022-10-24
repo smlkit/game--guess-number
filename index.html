@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="style.css" />
+    <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon" />
+    <title>Угадай число</title>
+  </head>
+
+  <body>
+    <div class="container">
+      <header>
+        <h1 class="title">Угадай число</h1>
+        <p class="between">От 1 до 10</p>
+        <div class="message-container">
+          <img src="" alt="" class="message-img" />
+          <p class="message">Начните угадывать...</p>
+        </div>
+        <p class="mystery mystery-animation">?</p>
+      </header>
+
+      <main>
+        <button class="btn guess guess-animation">Угадать!</button>
+        <input class="number" type="number" min="1" max="10" />
+        <div class="scores">
+          <div class="scores-container">
+            <img src="img/star.png" class="score-img" alt="" />
+            <p>Текущий счёт: <span class="current">10</span></p>
+          </div>
+          <div class="scores-container">
+            <img src="img/trophy.png" class="score-img" alt="" />
+            <p>Лучший счёт: <span class="best">0</span></p>
+          </div>
+        </div>
+      </main>
+
+      <nav>
+        <button class="btn again">Повторить</button>
+      </nav>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

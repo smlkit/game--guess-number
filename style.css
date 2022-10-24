@@ -1,0 +1,163 @@
+@import url("https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap");
+
+:root {
+  --bg-light: #f0f5f9;
+  --text-dark: #1e2022;
+  --text-light: #91999e;
+  --red: #e23e57;
+  --text-red: #a52539;
+  --green: #1fab89;
+  --text-green: #0d7058;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+*:focus {
+  outline: none;
+}
+
+body {
+  font-family: "Press Start 2P", cursive;
+}
+
+header {
+  text-align: center;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  height: 100vh;
+  background-color: var(--bg-light);
+}
+
+.title {
+  margin-top: 3.5rem;
+}
+
+.between {
+  color: var(--text-light);
+  margin-top: 0.5rem;
+  margin-bottom: 3.5rem;
+}
+
+.message-img {
+  margin-bottom: 0.5rem;
+}
+
+.mystery {
+  margin: 1rem;
+  font-size: 3rem;
+  color: var(--red);
+}
+
+.mystery-animation {
+  animation: color 2s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes color {
+  50% {
+    color: var(--green);
+  }
+
+  100% {
+    color: var(--red);
+  }
+}
+
+.btn {
+  color: #fff;
+  font-family: "Press Start 2P", cursive;
+  cursor: pointer;
+  border: none;
+}
+
+.guess {
+  background-color: var(--red);
+  padding: 1rem 2rem;
+
+  transition: 0.3s;
+}
+
+.guess-animation {
+  animation: bg-color 2s;
+  animation-iteration-count: infinite;
+}
+
+.btn:hover {
+  transform: translateY(-0.3rem);
+}
+
+.btn:active {
+  transform: translateY(0.3rem);
+}
+
+@keyframes bg-color {
+  50% {
+    background-color: var(--green);
+  }
+
+  100% {
+    background-color: var(--red);
+  }
+}
+.number {
+  width: 10rem;
+  background-color: transparent;
+  border: 3.5px var(--text-dark) solid;
+  text-align: center;
+  font-family: "Press Start 2P", cursive;
+}
+
+main {
+  display: flex;
+  column-gap: 3rem;
+  padding-bottom: 7rem;
+}
+
+.scores {
+  display: flex;
+  flex-direction: column;
+  row-gap: 0.7rem;
+}
+
+.scores-container {
+  display: flex;
+  column-gap: 0.7rem;
+  font-size: 0.8rem;
+  align-items: center;
+}
+
+.message-img {
+  width: 40px;
+}
+
+.score-img {
+  width: 30px;
+}
+
+nav {
+  width: 80%;
+  max-width: 1000px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.again {
+  background-color: var(--text-dark);
+  padding: 1.5rem 2rem;
+  font-size: 0.65rem;
+  margin-bottom: 2rem;
+  transition: 0.3s;
+}
+
+.again:hover {
+  opacity: 0.9;
+}
